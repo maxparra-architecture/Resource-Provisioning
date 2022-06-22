@@ -639,5 +639,5 @@ variables:
 
   application_display_name:
       type: string
-      title: "Nombre de la aplicacion en funciones"
+      title: "Nome do Aplicação no Functions"
       required: true

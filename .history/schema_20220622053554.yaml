@@ -218,8 +218,8 @@ variables:
 
   project_logging_config_display_name_prefix:
     type: string
-    title: "Prefijo para la configuración de Logging"
-    description: "Nombre para mostrar del grupo de logs"
+    title: "Prefixo para configuração do Logging"
+    description: "Nome de exibição para o grupo de logs"
     default: "FT-"
     required: true
     visible: 
@@ -228,8 +228,8 @@ variables:
 
   project_logging_config_is_archiving_enabled:
     type: boolean
-    title: "Archivado habilitado para el registro de proyectos"
-    description: "Nombre para mostrar del grupo de logs"
+    title: "Arquivamento habilitado para registro de projetos"
+    description: "Nome de exibição para o grupo de logs"
     default: false
     required: true
     visible: 
@@ -238,8 +238,8 @@ variables:
 
   project_logging_config_retention_period_in_days:
     type: string
-    title: "Periodo de retención de logs del proyecto"
-    description: "Días para retener los logs del proyecto"
+    title: "Período de retenção dos logs do projeto"
+    description: "Dias para reter os logs do Projeto."
     default: 30
     required: true
     visible: 
@@ -255,23 +255,23 @@ variables:
     enum:
       - "OKE_CLUSTER"
     title: "Tipo de ambiente"
-    description: "El tipo de ambiente destino. El stack actualmente soporta solamente OKE_CLUSTER"
+    description: "O tipo de ambiente a ser direcionado. A pilha atualmente suporta apenas OKE_CLUSTER"
     default: "OKE_CLUSTER"
     visible: 
       and:
         - show_advanced
   environment_description:
     type: string
-    title: "Descripción do ambiente"
-    description: "Describir el ambiente DevOps"
-    default: "Ambiente OKE que puede ser direccionado por DevOps"
+    title: "Descrição do ambiente"
+    description: "Descrever o ambiente DevOps"
+    default: "Ambiente OKE que pode ser direcionado por DevOps"
     visible: 
       and:
         - show_advanced
   environment_display_name:
     type: string
-    title: "Nombre de Ambiente"
-    description: "Nombre para el ambiente DevOps"
+    title: "Nome do ambiente"
+    description: "Nome para o ambiente DevOps"
     default: "DevOps OKE Environment"
   
   ###########
@@ -279,11 +279,11 @@ variables:
   ###########
   create_dynamic_group_for_devops_pipln_in_compartment:
     type: boolean
-    title: "Crear un Dynamic Group para pipelines de DevOps"
+    title: "Criar um Dynamic Group para pipelines de DevOps"
     description: | 
-      Necesitas ser administrador para hacer esto
+      Você precisa ser um administrador para fazer isso.
 
-      Como alternativa, puede hacer que el administrador cree un Dynamic Group para usted. 
+      Como alternativa, você pode fazer com que o administrador crie um grupo dinâmico para você. 
     default: true
     
   ####################  
@@ -569,13 +569,13 @@ variables:
         - create_vault_policies_for_group
 
   ####################  
-  ## API Gateway 
+  ## OKE 
   ####################
   
   api_gateway_name:
     type: string
-    title: "Nombre del API Gateway"
-    #description: "Nombre del API Gateway que se va a crear"
+    title: "Nome do API Gateway"
+    #description: "Nome do API Gateway a ser criado"
     #default: "API Gateway FT"
     required: true
 
@@ -587,8 +587,8 @@ variables:
 
   apm_diplay_name:
     type: string
-    title: "Nombre del  APM"
-    #description: "Nombre del APM a ser creado"
+    title: "Nome do APM"
+    #description: "Nome do APM a ser criado"
     #default: "APM FT"
     required: true
 
@@ -596,48 +596,48 @@ variables:
 
   repository_is_immutable:
       type: boolean
-      title: Repositorio Inmutable?
+      title: Respositório é Imutável?
       required: true
 
   repository_repository_type:
       type: string
-      title: Tipo de Repositorio
+      title: Tipo de Repositório
       required: true
 
     
   artifact_repository_display_name:
       type: string
-      title: Nombre de repositorio de artefactos
+      title: Nome do Respositório de Artefatos
       required: true
 
   container_repository_display_name:
     type: string
-    title: Nombre de repositorio de contenedores
+    title: Nome da Imagem de container 
     required: true
 
   # Stream 
 
   stream_pool_name:
       type: string
-      title: "Nombre del Pool de Stream"
+      title: "Nome do Stream Pool"
       required: true
 
   stream_name:
       type: string
-      title: "Nombre de Stream"
+      title: "Nome do Stream"
       required: true
 
   stream_partitions:
       type: number 
-      title: Particiones de Stream 
+      title: Stream Partitions
       required: true
 
   bucket_name:
       type: string
-      title: "Nombre de Object Storage"
+      title: "Nome do Object Storage"
       required: true
 
   application_display_name:
       type: string
-      title: "Nombre de la aplicacion en funciones"
+      title: "Nome do Aplicação no Functions"
       required: true

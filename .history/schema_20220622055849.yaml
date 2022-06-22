@@ -629,15 +629,15 @@ variables:
 
   stream_partitions:
       type: number 
-      title: Particiones de Stream 
+      title: Stream Partitions
       required: true
 
   bucket_name:
       type: string
-      title: "Nombre de Object Storage"
+      title: "Nome do Object Storage"
       required: true
 
   application_display_name:
       type: string
-      title: "Nombre de la aplicacion en funciones"
+      title: "Nome do Aplicação no Functions"
       required: true

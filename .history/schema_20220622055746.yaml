@@ -612,32 +612,32 @@ variables:
 
   container_repository_display_name:
     type: string
-    title: Nombre de repositorio de contenedores
+    title: Nome da Imagem de container 
     required: true
 
   # Stream 
 
   stream_pool_name:
       type: string
-      title: "Nombre del Pool de Stream"
+      title: "Nome do Stream Pool"
       required: true
 
   stream_name:
       type: string
-      title: "Nombre de Stream"
+      title: "Nome do Stream"
       required: true
 
   stream_partitions:
       type: number 
-      title: Particiones de Stream 
+      title: Stream Partitions
       required: true
 
   bucket_name:
       type: string
-      title: "Nombre de Object Storage"
+      title: "Nome do Object Storage"
       required: true
 
   application_display_name:
       type: string
-      title: "Nombre de la aplicacion en funciones"
+      title: "Nome do Aplicação no Functions"
       required: true
